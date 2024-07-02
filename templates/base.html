@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #7c2ad3 0%, #3277ef 100%);
+            font-family: Arial, sans-serif;
+            color: #fff;
+        }
+        .container-fluid {
+            padding-top: 50px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #fff;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="url"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color:#300e55;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #2575fc;
+        }
+        .url-display {
+            margin-bottom: 15px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+        .url-display a {
+            color: #6a11cb;
+            text-decoration: none;
+            word-break: break-all;
+        }
+        .url-display a:hover {
+            text-decoration: underline;
+        }
+        .btn-primary {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #300e55;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+        }
+        .btn-primary:hover {
+            background-color: #2575fc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1>URL Shortener</h1>
+        <hr>
+        {% block content %}
+        {% endblock %}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

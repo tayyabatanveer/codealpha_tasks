@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Short URL{% endblock %}
+
+{% block content %}
+<form action="/" method="post">
+    <label for="url">Enter Your URL: </label>
+    <input type="url" name="URL" id="url" placeholder="https://..." pattern="https://.*" size="45" required>
+    <br>
+    <input type="submit" value="Enter" class="btn btn-primary">
+</form>
+{% endblock %}

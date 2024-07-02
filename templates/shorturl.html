@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}Short URL{% endblock %}
+
+{% block content %}
+<div class="container" role="main">
+    <h1>Shortened URL</h1>
+    <div class="url-display">
+        <p>Original URL: <a href="{{ long_url }}" target="_blank">{{ long_url }}</a></p>
+        <p>Short URL: <a href="{{ url_for('redirection', short_url=short_url_display) }}" target="_blank">{{ request.host_url }}r/{{ short_url_display }}</a></p>
+    </div>
+    <a href="/" class="btn btn-primary">Shorten Another URL</a>
+</div>
+{% endblock %}
